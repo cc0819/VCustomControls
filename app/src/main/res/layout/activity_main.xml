@@ -1,12 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.cheng.cc.customcontrols.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btn_textview"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:text="textview all" />
+
+    <Button
+        android:id="@+id/btn_editview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="edittext all" />
+
+    <Button
+        android:id="@+id/btn_buttonview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="button all" />
+
+
+    <Button
+        android:id="@+id/btn_progressview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="progress all" />
+
+    <Button
+        android:id="@+id/btn_otherview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="otherview all" />
+
+
+</LinearLayout>
