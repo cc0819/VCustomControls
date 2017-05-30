@@ -3,6 +3,7 @@ package com.cheng.cc.customcontrols;
 import android.content.Intent;
 import android.view.View;
 
+import com.cheng.cc.customcontrols.activity.CustomStudyAll_Activity;
 import com.cheng.cc.customcontrols.activity.CustomTextAll_Activity;
 
 import butterknife.ButterKnife;
@@ -36,12 +37,13 @@ public class MainActivity extends BaseActivity {
 
     }
 
-    @OnClick({R.id.btn_textview, R.id.btn_editview, R.id.btn_buttonview, R.id.btn_progressview, R.id.btn_otherview})
+    @OnClick({R.id.btn_studyview,R.id.btn_textview, R.id.btn_editview, R.id.btn_buttonview, R.id.btn_progressview, R.id.btn_otherview})
     public void onClickViews(View v) {
         switch (v.getId()) {
+            case R.id.btn_studyview:
+                startActivity(new Intent(this, CustomStudyAll_Activity.class));
             case R.id.btn_textview:
-                Intent intent = new Intent(this, CustomTextAll_Activity.class);
-                startActivity(intent);
+                startActivity(new Intent(this, CustomTextAll_Activity.class));
                 break;
             case R.id.btn_editview:
 

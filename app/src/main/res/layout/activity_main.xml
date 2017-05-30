@@ -7,6 +7,13 @@
     tools:context="com.cheng.cc.customcontrols.MainActivity">
 
     <Button
+        android:id="@+id/btn_studyview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="study all" />
+
+
+    <Button
         android:id="@+id/btn_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

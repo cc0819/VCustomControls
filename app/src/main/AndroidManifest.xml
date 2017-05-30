@@ -25,6 +25,9 @@
         </activity>
 
         <activity
+            android:name=".activity.CustomStudyAll_Activity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".activity.CustomTextAll_Activity"
             android:screenOrientation="portrait" />
 
