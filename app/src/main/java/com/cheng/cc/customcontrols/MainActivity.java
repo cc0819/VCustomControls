@@ -3,6 +3,7 @@ package com.cheng.cc.customcontrols;
 import android.content.Intent;
 import android.view.View;
 
+import com.cheng.cc.customcontrols.activity.CustomEditAll_Activity;
 import com.cheng.cc.customcontrols.activity.CustomStudyAll_Activity;
 import com.cheng.cc.customcontrols.activity.CustomTextAll_Activity;
 
@@ -42,11 +43,12 @@ public class MainActivity extends BaseActivity {
         switch (v.getId()) {
             case R.id.btn_studyview:
                 startActivity(new Intent(this, CustomStudyAll_Activity.class));
+                break;
             case R.id.btn_textview:
                 startActivity(new Intent(this, CustomTextAll_Activity.class));
                 break;
             case R.id.btn_editview:
-
+                startActivity(new Intent(this, CustomEditAll_Activity.class));
                 break;
             case R.id.btn_buttonview:
 

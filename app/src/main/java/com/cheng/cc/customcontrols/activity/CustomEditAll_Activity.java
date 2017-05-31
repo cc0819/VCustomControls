@@ -7,18 +7,19 @@ import com.cheng.cc.customcontrols.R;
 import butterknife.ButterKnife;
 
 /**
- * @author Created by cc on 17/5/30.
- * @fileName CustomStudyAll_Activity
+ * @author Created by cc on 17/5/31.
+ * @fileName CustomEditAll_Activity
  * @githublink https://github.com/cc0819
  * @csdnlink http://blog.csdn.net/qq_25404567
  */
 
-public class CustomStudyAll_Activity extends BaseActivity {
+public class CustomEditAll_Activity extends BaseActivity {
     @Override
     public void initView() {
-        setContentView(R.layout.activity_studyall);
+        setContentView(R.layout.activity_editall);
         ButterKnife.bind(this);
         AppActivityManager.getAppManager().addActivity(this);
+
     }
 
     @Override
@@ -35,8 +36,6 @@ public class CustomStudyAll_Activity extends BaseActivity {
     public void evenControl() {
 
     }
-
-
 
 
 

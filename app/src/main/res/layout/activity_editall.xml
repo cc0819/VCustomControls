@@ -4,10 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.cheng.cc.customcontrols.activity.CustomStudyAll_Activity">
+    tools:context="com.cheng.cc.customcontrols.activity.CustomEditAll_Activity">
 
-    <TextView
-        android:id="@+id/btn_textview1"
+    <Button
+        android:id="@+id/btn_textview2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="textview all" />
