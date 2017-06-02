@@ -33,10 +33,18 @@
 
 
     <Button
-        android:id="@+id/btn_progressview"
+    android:id="@+id/btn_progressview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="progress all" />
+
+    <Button
+        android:id="@+id/btn_imageview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="progress all" />
+        android:text="image all" />
+
+
 
     <Button
         android:id="@+id/btn_otherview"
