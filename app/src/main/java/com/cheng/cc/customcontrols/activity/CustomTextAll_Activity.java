@@ -1,10 +1,14 @@
 package com.cheng.cc.customcontrols.activity;
 
+import android.content.Intent;
+import android.view.View;
+
 import com.cheng.cc.customcontrols.AppActivityManager;
 import com.cheng.cc.customcontrols.BaseActivity;
 import com.cheng.cc.customcontrols.R;
 
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * @author Created by cc on 17/5/30.
@@ -33,11 +37,19 @@ public class CustomTextAll_Activity extends BaseActivity {
 
     @Override
     public void evenControl() {
-
     }
 
+    @OnClick({R.id.btn_lightning})
+    public void onClickViews(View v) {
+        switch (v.getId()) {
 
+            case R.id.btn_lightning:
+                startActivity(new Intent(CustomTextAll_Activity.this, TextLightning_Activity.class));
+                break;
 
+            default:
+                break;
+        }
 
-
+    }
 }

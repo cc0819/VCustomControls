@@ -4,13 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.cheng.cc.customcontrols.activity.CustomTextAll_Activity">
+    android:gravity="center"
+    tools:context="com.cheng.cc.customcontrols.activity.TextLightning_Activity">
 
-    <Button
-        android:id="@+id/btn_lightning"
-        android:layout_width="match_parent"
+    <com.cheng.cc.customcontrols.views.LightningTextView
+        android:id="@+id/lightning"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="lightning text" />
-
-
+        android:gravity="center"/>
 </LinearLayout>

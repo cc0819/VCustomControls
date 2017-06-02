@@ -24,12 +24,21 @@
             </intent-filter>
         </activity>
 
+        <!--Study-->
         <activity
             android:name=".activity.CustomStudyAll_Activity"
             android:screenOrientation="portrait" />
+
+
+        <!--TextView-->
         <activity
             android:name=".activity.CustomTextAll_Activity"
             android:screenOrientation="portrait" />
+
+        <activity android:name=".activity.TextLightning_Activity"
+            android:screenOrientation="portrait"/>
+
+
 
         <activity android:name=".activity.CustomEditAll_Activity"
             android:screenOrientation="portrait"/>
