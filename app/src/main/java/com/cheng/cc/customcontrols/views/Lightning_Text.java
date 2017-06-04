@@ -17,7 +17,7 @@ import android.widget.TextView;
  * @csdnlink http://blog.csdn.net/qq_25404567
  */
 
-public class LightningTextView extends TextView {
+public class Lightning_Text extends TextView {
 
     private int mViewWidth;
     private int mTranslate;
@@ -26,15 +26,15 @@ public class LightningTextView extends TextView {
     private Matrix mGradientMatrix;
 
 
-    public LightningTextView(Context context) {
+    public Lightning_Text(Context context) {
         super(context);
     }
 
-    public LightningTextView(Context context, AttributeSet attrs) {
+    public Lightning_Text(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public LightningTextView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public Lightning_Text(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 

@@ -7,10 +7,10 @@
     tools:context="com.cheng.cc.customcontrols.activity.CustomEditAll_Activity">
 
     <Button
-        android:id="@+id/btn_textview2"
+        android:id="@+id/btn_editdeletecontent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="textview all" />
+        android:text="deletecontent" />
 
 
 

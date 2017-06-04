@@ -38,9 +38,11 @@
         <activity android:name=".activity.TextLightning_Activity"
             android:screenOrientation="portrait"/>
 
-
-
+        <!--EditText-->
         <activity android:name=".activity.CustomEditAll_Activity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.EditDeleteContent_Activity"
             android:screenOrientation="portrait"/>
 
 

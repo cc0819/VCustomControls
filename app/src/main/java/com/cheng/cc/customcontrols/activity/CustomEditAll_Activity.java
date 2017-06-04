@@ -1,10 +1,14 @@
 package com.cheng.cc.customcontrols.activity;
 
+import android.content.Intent;
+import android.view.View;
+
 import com.cheng.cc.customcontrols.AppActivityManager;
 import com.cheng.cc.customcontrols.BaseActivity;
 import com.cheng.cc.customcontrols.R;
 
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * @author Created by cc on 17/5/31.
@@ -37,6 +41,18 @@ public class CustomEditAll_Activity extends BaseActivity {
 
     }
 
+    @OnClick({R.id.btn_editdeletecontent})
+    public void onClickViews(View view) {
+        switch (view.getId()) {
+            case R.id.btn_editdeletecontent:
+                startActivity(new Intent(this,EditDeleteContent_Activity.class));
+                break;
+
+            default:
+                break;
+        }
+
+    }
 
 
 }
