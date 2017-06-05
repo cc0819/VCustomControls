@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.view.View;
 
 import com.cheng.cc.customcontrols.activity.CustomButtonAll_Activity;
+import com.cheng.cc.customcontrols.activity.CustomDialogAll_Activity;
 import com.cheng.cc.customcontrols.activity.CustomEditAll_Activity;
 import com.cheng.cc.customcontrols.activity.CustomStudyAll_Activity;
 import com.cheng.cc.customcontrols.activity.CustomTextAll_Activity;
@@ -39,7 +40,8 @@ public class MainActivity extends BaseActivity {
 
     }
 
-    @OnClick({R.id.btn_studyview,R.id.btn_textview, R.id.btn_editview, R.id.btn_buttonview, R.id.btn_progressview, R.id.btn_otherview})
+    @OnClick({R.id.btn_studyview,R.id.btn_textview, R.id.btn_editview, R.id.btn_buttonview, R.id.btn_progressview,
+            R.id.btn_imageview,R.id.btn_dialogview,R.id.btn_otherview})
     public void onClickViews(View v) {
         switch (v.getId()) {
             case R.id.btn_studyview:
@@ -56,6 +58,12 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.btn_progressview:
 
+                break;
+            case R.id.btn_imageview:
+
+                break;
+            case R.id.btn_dialogview:
+                startActivity(new Intent(this, CustomDialogAll_Activity.class));
                 break;
             case R.id.btn_otherview:
 

@@ -44,7 +44,11 @@
         android:layout_height="wrap_content"
         android:text="image all" />
 
-
+    <Button
+        android:id="@+id/btn_dialogview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dialog all" />
 
     <Button
         android:id="@+id/btn_otherview"
