@@ -1,6 +1,7 @@
 package com.cheng.cc.customcontrols.activity;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 
 import com.cheng.cc.customcontrols.AppActivityManager;
@@ -18,12 +19,12 @@ import butterknife.OnClick;
  */
 
 public class CustomEditAll_Activity extends BaseActivity {
+
     @Override
-    public void initView() {
+    public void initView(Bundle savedInstanceState) {
         setContentView(R.layout.activity_editall);
         ButterKnife.bind(this);
         AppActivityManager.getAppManager().addActivity(this);
-
     }
 
     @Override

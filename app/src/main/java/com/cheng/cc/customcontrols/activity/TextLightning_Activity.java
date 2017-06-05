@@ -1,5 +1,7 @@
 package com.cheng.cc.customcontrols.activity;
 
+import android.os.Bundle;
+
 import com.cheng.cc.customcontrols.AppActivityManager;
 import com.cheng.cc.customcontrols.BaseActivity;
 import com.cheng.cc.customcontrols.R;
@@ -19,8 +21,9 @@ public class TextLightning_Activity extends BaseActivity {
     @BindView(R.id.lightning)
     Lightning_Text lightning;
 
+
     @Override
-    public void initView() {
+    public void initView(Bundle savedInstanceState) {
         setContentView(R.layout.activity_lightning);
         ButterKnife.bind(this);
         AppActivityManager.getAppManager().addActivity(this);

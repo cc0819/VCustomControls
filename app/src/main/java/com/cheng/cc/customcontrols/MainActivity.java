@@ -1,6 +1,7 @@
 package com.cheng.cc.customcontrols;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 
 import com.cheng.cc.customcontrols.activity.CustomButtonAll_Activity;
@@ -18,11 +19,13 @@ import butterknife.OnClick;
 public class MainActivity extends BaseActivity {
 
 
+
     @Override
-    public void initView() {
+    public void initView(Bundle savedInstanceState) {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         AppActivityManager.getAppManager().addActivity(this);
+
     }
 
     @Override

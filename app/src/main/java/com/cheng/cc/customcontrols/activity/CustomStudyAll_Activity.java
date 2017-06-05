@@ -1,5 +1,7 @@
 package com.cheng.cc.customcontrols.activity;
 
+import android.os.Bundle;
+
 import com.cheng.cc.customcontrols.AppActivityManager;
 import com.cheng.cc.customcontrols.BaseActivity;
 import com.cheng.cc.customcontrols.R;
@@ -14,8 +16,9 @@ import butterknife.ButterKnife;
  */
 
 public class CustomStudyAll_Activity extends BaseActivity {
+
     @Override
-    public void initView() {
+    public void initView(Bundle savedInstanceState) {
         setContentView(R.layout.activity_studyall);
         ButterKnife.bind(this);
         AppActivityManager.getAppManager().addActivity(this);

@@ -7,26 +7,23 @@ import android.support.v4.app.FragmentActivity;
  *Activity基类
  */
 public abstract class BaseActivity extends FragmentActivity{
-    public Bundle savedInstanceState;
-    
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        this.savedInstanceState = savedInstanceState;
         super.onCreate ( savedInstanceState );
-        initView ();
+        initView (savedInstanceState);
         initInstall();
         initData();
-    
+        evenControl();
 
     }
-
- 
 
     /**
      * 初始化布局
      */
-    abstract public void initView();
+    abstract public void initView(Bundle savedInstanceState);
+
 
     /***
      * 初始化设置
