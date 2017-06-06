@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <!-- android:radius 弧形的半径 -->
+            <solid android:color="@color/bgColor_item_press" />
+            <corners android:bottomLeftRadius="15px" android:bottomRightRadius="15px" />
+        </shape>
+    </item>
+    <item android:drawable="@android:color/transparent" />
+</selector>
