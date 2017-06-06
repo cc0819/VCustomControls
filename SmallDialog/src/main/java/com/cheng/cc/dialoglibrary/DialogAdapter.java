@@ -68,6 +68,7 @@ public class DialogAdapter extends BaseAdapter<String> {
                 }
             }
         });
+
     }
 
 //    @Override
