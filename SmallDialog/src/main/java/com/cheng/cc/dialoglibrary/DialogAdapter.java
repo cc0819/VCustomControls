@@ -3,7 +3,6 @@ package com.cheng.cc.dialoglibrary;
 import android.content.Context;
 import android.text.TextUtils;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.TextView;
 
 import java.util.HashMap;
@@ -16,7 +15,7 @@ import java.util.Map;
  * @csdnlink http://blog.csdn.net/qq_25404567
  */
 
-public class DialogAdapter extends BaseAdapter<String> implements AdapterView.OnItemClickListener{
+public class DialogAdapter extends BaseAdapter<String> {
 
     private onItemClickListener mListener;
     private int mTextColor;
@@ -61,22 +60,22 @@ public class DialogAdapter extends BaseAdapter<String> implements AdapterView.On
         }
         String text = mList.get(position);
         contentTV.setText(TextUtils.isEmpty(text) ? "" : text);
-//        contentTV.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if (mListener != null) {
-//                    mListener.onItemClick(position);
-//                }
-//            }
-//        });
+        contentTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mListener != null) {
+                    mListener.onItemClick(position);
+                }
+            }
+        });
     }
 
-    @Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-        if (mListener != null) {
-            mListener.onItemClick(position);
-        }
-    }
+//    @Override
+//    public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+//        if (mListener != null) {
+//            mListener.onItemClick(position);
+//        }
+//    }
 
 
     public interface onItemClickListener {

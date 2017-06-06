@@ -11,54 +11,63 @@
         android:id="@+id/btn_disfade_center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="disfade_center"/>
 
     <Button
         android:id="@+id/btn_disfade_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="disfade_bottom"/>
 
     <Button
         android:id="@+id/btn_fade_center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="fade_center"/>
 
     <Button
         android:id="@+id/btn_fade_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="fade_bottom"/>
 
     <Button
         android:id="@+id/btn_styles_center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="customstyles_center"/>
 
     <Button
         android:id="@+id/btn_styles_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="customstyles_bottom"/>
 
     <Button
         android:id="@+id/btn_disListener"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="disListener"/>
 
     <Button
         android:id="@+id/btn_changemargin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="changemargindistance"/>
 
     <Button
         android:id="@+id/btn_changeanim"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="changeanim"/>
 
 

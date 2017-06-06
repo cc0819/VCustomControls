@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -16,14 +15,14 @@ import java.util.List;
  * @author Created by cc on 17/6/5.
  * @fileName BaseAdapter
  * @githublink https://github.com/cc0819
- * @csdnlink http://blog.csdn.net/qq_25404567
+ * @csdnlink http://blog.±csdn.net/qq_25404567
  */
 
 public abstract class BaseAdapter<T> extends RecyclerView.Adapter<BaseViewHolder> {
 
     protected Context mContext;
     private LayoutInflater mInflater;
-    public VoicePlayListener mListener;
+//    public VoicePlayListener mListener;
     protected List<T> mList = new ArrayList<>();
 
     public BaseAdapter(Context context) {
@@ -109,12 +108,12 @@ public abstract class BaseAdapter<T> extends RecyclerView.Adapter<BaseViewHolder
 
 
 
-    public interface VoicePlayListener {
-        void onVoiceIconClick(ImageView imgView, String tag, String path);
-    }
-
-    public void setVoicePlayListener(VoicePlayListener listener) {
-        mListener = listener;
-    }
+//    public interface VoicePlayListener {
+//        void onVoiceIconClick(ImageView imgView, String tag, String path);
+//    }
+//
+//    public void setVoicePlayListener(VoicePlayListener listener) {
+//        mListener = listener;
+//    }
 
 }

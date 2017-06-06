@@ -10,6 +10,7 @@
         android:id="@+id/btn_studyview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="study all" />
 
 
@@ -17,18 +18,21 @@
         android:id="@+id/btn_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="textview all" />
 
     <Button
         android:id="@+id/btn_editview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="edittext all" />
 
     <Button
         android:id="@+id/btn_buttonview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="button all" />
 
 
@@ -36,24 +40,28 @@
     android:id="@+id/btn_progressview"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
     android:text="progress all" />
 
     <Button
         android:id="@+id/btn_imageview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="image all" />
 
     <Button
         android:id="@+id/btn_dialogview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="dialog all" />
 
     <Button
         android:id="@+id/btn_otherview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="otherview all" />
 
 

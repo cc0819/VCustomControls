@@ -63,6 +63,7 @@ public class CustomDialogAll_Activity extends BaseActivity implements BaseDialog
             case R.id.btn_disfade_bottom:
                 mBaseDialog = new BaseDialog(CustomDialogAll_Activity.this, BaseDialog.Style.DownSheet, contentArray,
                         "底部", "点击外部不可关闭", this);
+                mBaseDialog.setItemTextColorAt(1, getResources().getColor(R.color.colorAccent));
                 break;
             case R.id.btn_fade_center:
                 mBaseDialog = new BaseDialog(CustomDialogAll_Activity.this, BaseDialog.Style.Center,contentArray,

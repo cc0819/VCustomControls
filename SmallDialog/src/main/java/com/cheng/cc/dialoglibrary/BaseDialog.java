@@ -2,7 +2,6 @@ package com.cheng.cc.dialoglibrary;
 
 import android.app.Activity;
 import android.support.annotation.ColorInt;
-import android.support.annotation.IdRes;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
@@ -101,8 +100,7 @@ public class BaseDialog {
 
     private void initCenterLayout() {
         mContentView = (ViewGroup) mRootView.findViewById(R.id.dialog_root_content);
-//        int marginLR = mActivity.getResources().getDimensionPixelSize(R.dimen.margin_center_left_right);
-        int marginLR = 40;
+        int marginLR = mActivity.getResources().getDimensionPixelSize(R.dimen.margin_center_left_right);
         FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT, Gravity.CENTER);
         lp.gravity = Gravity.CENTER;
@@ -113,8 +111,8 @@ public class BaseDialog {
 
     private void initDownSheetLayout() {
         mContentView = (ViewGroup) mRootView.findViewById(R.id.dialog_root_content);
-//        int marginLR = mActivity.getResources().getDimensionPixelSize(R.dimen.margin_downSheet_left_right);
-        int marginLR =10;
+        int marginLR = mActivity.getResources().getDimensionPixelSize(R.dimen.margin_downSheet_left_right);
+//        int marginLR =10;
         FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT, Gravity.BOTTOM);
         lp.gravity = Gravity.BOTTOM;
@@ -134,7 +132,7 @@ public class BaseDialog {
         initRecyclerView(R.id.downSheet_content_rv);
     }
 
-    private void initHeaderView(@IdRes int titleId, @IdRes int msgId) {
+    private void initHeaderView(int titleId, int msgId) {
         mTitleTV = (TextView) mRootView.findViewById(titleId);
         mMsgTV = (TextView) mRootView.findViewById(msgId);
         mTitleTV.setText(TextUtils.isEmpty(mTitle) ? "默认标题" : mTitle);
@@ -142,7 +140,7 @@ public class BaseDialog {
         else mMsgTV.setText(mMsg);
     }
 
-    private void initRecyclerView(@IdRes int rvId) {
+    private void initRecyclerView(int rvId) {
         RecyclerView rv = (RecyclerView) mRootView.findViewById(rvId);
         mLl = (LinearLayout) mRootView.findViewById(R.id.center_content_ll);
         if (mStyle.equals(Style.Center) && mItems != null && mItems.size() == 2) {
