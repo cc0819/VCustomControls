@@ -1,1 +1,1 @@
-include ':app', ':SmallDialog'
+include ':app'
